@@ -1,0 +1,87 @@
+# /bevezetes — EV-AIOS Bevezető Varázsló
+
+## Leírás
+Ez a skill az EV-AIOS első futtatásához szükséges. Beolvassa az `ev-intake.md` fájlt, megválaszolja a hiányzó kérdéseket egy interaktív interjún keresztül, majd legenerálja az 1. napi alapfájl-csomagot.
+
+Bármikor újrafuttatható egy szerkesztett `ev-intake.md`-ből.
+
+## Mit csinál
+- Beolvassa az `ev-intake.md`-t és ellenőrzi, melyik kérdés van kitöltve
+- Hiányzó kérdéseket interjú formájában feltesz a felhasználónak
+- A válaszok alapján legenerálja a következő fájlokat:
+  - `context/vallalkozas.md` (Q1 + Q3 alapján)
+  - `context/szemelyes.md` (Q2 + Q3 alapján)
+  - `context/prioritasok.md` (Q3 alapján)
+  - `references/voice.md` (Q2 alapján — verbatim hangminta)
+  - `kapcsolatok.md` (Q4-Q7 alapján kitöltve)
+  - `CLAUDE.md` (placeholderek kitöltve)
+
+## Mit NEM csinál
+- Nem ír felül kézzel szerkesztett context fájlokat figyelmeztetés nélkül
+- Nem tölti ki a `decisions/naplo.md`-t (azt a `/fejlesztes` és `/attekintes` teszi)
+- Nem épít domain skilleket (azt a `BOVITESEK.md` szerint a felhasználó dönti el)
+- Nem ad pontszámot, audit-ot vagy javaslatot — ez tisztán setup skill
+
+## Fázisok
+
+### 1. fázis — Intake ellenőrzés
+Olvasd be az `ev-intake.md`-t. Listázd ki, melyik Q1-Q7 kérdés van kitöltve és melyik nem (a `[A te válaszod]` placeholder = nincs kitöltve).
+
+Ha minden ki van töltve, ugorj a 3. fázisra.
+
+### 2. fázis — Hiányzó kérdések interjúja
+Egyenként kérdezd végig a hiányzó kérdéseket. **Egyszerre EGY kérdés.** Várj válaszra. A választ mentsd vissza az `ev-intake.md`-be (str_replace-szel a placeholder helyére).
+
+**Speciális szabály a Q2-re**: HA a felhasználó NEM illeszt be verbatim szöveget, hanem leírja "mit szokott írni", JELEZD hogy ez voice-szennyeződés és kérj újra:
+
+> "Ez nem egy verbatim minta — ez egy leírás róla. Kérlek illessz be tényleges, nyers szöveget: egy emailt, posztot, üzenetet pontosan abban a formában, ahogy elküldted/megírtad. Ne fogalmazd át, ne tisztázd. A nyers, hibákkal együtt jobb, mint a kitisztított."
+
+A hangmintának autentikusnak KELL lennie, különben a `references/voice.md` használhatatlan lesz.
+
+### 3. fázis — Fájlgenerálás
+
+A teljes intake alapján generáld le az alábbi fájlokat:
+
+**`context/vallalkozas.md`** — Q1 + Q3 szintézise. Strukturált:
+- Identitás (ki vagyok)
+- Ajánlat (mit adok el)
+- ICP (kinek)
+- Q3 prioritások mint kontextus
+
+**`context/szemelyes.md`** — Q2 + Q3 alapján következtetett személyes profil:
+- Kommunikációs stílus észrevételek
+- Mire fókuszál a következő 90 napban
+- (Ha az intake-ből kiderül) értékek, motivációk
+
+**`context/prioritasok.md`** — Q3 tisztán, plusz minden prioritáshoz:
+- Mi a definíciója a "kész"-nek
+- Mi a kapcsolat a három pillérrel (ügyfélszerzés / ügyfélkezelés / háttérműködés)
+
+**`references/voice.md`** — Q2 verbatim mintái. ALATTUK megfigyelt jellemzők:
+- Regiszter (formális/informális)
+- Mondatszerkezet (rövid/hosszú)
+- Gyakori szavak/kifejezések
+- Írásjelhasználat
+- "Mit NE csinálj a hangom utánzásakor"
+
+**`kapcsolatok.md`** — Q4-Q7 alapján minden megemlített eszköz külön bejegyzéssel a megadott formátumban (Mire való / Pillér / Státusz / Hozzáférés / Frissítés).
+
+**`CLAUDE.md`** — A meglévő placeholder fájl frissítése:
+- `{{Neved}}` → Q1-ből kinyert név
+- `{{megnevezett prioritás}}` → Q3 első prioritása
+- "Tudásbázis" szekció → Q1 + Q3 szintézis
+- "Kapcsolatok" szekció → kapcsolatok.md tömör összefoglalója
+
+**Konfliktuskezelés**: Ha valamelyik fájl már létezik és tartalmaz tartalmat (nem a default placeholder), KÉRDEZZ a felhasználótól: 
+
+> "A `[fájlnév]` már tartalmaz adatot. Felülírjam, egybeolvasszam (a régit megtartva, az újat hozzáadva), vagy hagyjam érintetlenül?"
+
+### 4. fázis — Záró összefoglaló
+
+Írd ki:
+- Melyik fájlok jöttek létre / frissültek
+- Mit ajánlasz következő lépésnek (általában: "használd egy hetet, aztán futtasd `/attekintes`-t a 7. napon")
+- Egy mondatos emlékeztető: "Bármikor szerkesztheted az `ev-intake.md`-t és újrafuttathatod a `/bevezetes`-t."
+
+## Kimenet
+Egy működő, kitöltött AIOS, készen az 1. napi használatra.
