@@ -18,14 +18,14 @@ Identitás, ajánlat, ICP (ideális ügyfél). Egy bekezdés mindegyikre elég.
 
 ## Q2 — Illessz be 1-2 saját szöveget, amit nemrég írtál. Ne szerkeszd át.
 
-Egy email, egy LinkedIn poszt, egy Messenger üzenet, egy dokumentum — bármi, ami úgy hangzik, ahogy te beszélsz, amikor nem próbálkozol. **Verbatim illeszd be.** Ne gépeld be Claude-dal beszélgetés közben — a chat-formájú minták rosszabbak, mint a semmilyen minta (hangelszennyeződés).
+Egy email, egy LinkedIn poszt, egy Messenger üzenet, egy dokumentum — bármi, ami úgy hangzik, ahogy te beszélsz, amikor nem próbálkozol. **Szó szerint (verbatim) illeszd be.** Ne gépeld be Claude-dal beszélgetés közben — a chat-formájú minták rosszabbak, mint a semmilyen minta (kevert hang).
 
 ```
-[Minta 1 — verbatim]
+[Minta 1 — szó szerinti]
 ```
 
 ```
-[Minta 2 — verbatim]
+[Minta 2 — szó szerinti]
 ```
 
 ---

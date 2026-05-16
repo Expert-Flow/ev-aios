@@ -4,6 +4,14 @@ Ez a fájl regiszterel minden eszközt és rendszert, amit az AIOS-od elér VAGY
 
 ---
 
+> **A "Hozzáférés módja" mező lehetséges értékei:**
+> - **MCP** — beépített csatlakozó (gyors, biztonságos). Pl. a Számlázz.hu-hoz van ilyen. (MCP = közvetlen csatlakozó az AIOS és egy külső eszköz között — pl. Számlázz.hu.)
+> - **API kulcs** — egy hosszú titkos kód, amit be kell másolnod. Egy kicsit körülményes, de sok eszközhöz megy. (API kulcs = hosszú titkos kód, amit be kell másolnod, hogy a rendszerek beszéljenek egymással.)
+> - **Kézi** — nincs technikai csatlakozó. Te magad másolod át az adatokat.
+> - **Natív** — a Claude Code alapból tudja, semmit nem kell konfigurálnod.
+
+---
+
 ## Formátum minden bejegyzéshez
 
 ```
@@ -11,8 +19,8 @@ Ez a fájl regiszterel minden eszközt és rendszert, amit az AIOS-od elér VAGY
 - **Mire való**: [egy mondat]
 - **Pillér**: [Ügyfélszerzés / Ügyfélkezelés / Háttérműködés / Több]
 - **Státusz**: [Bekötve / Nincs bekötve / Tervezett]
-- **Hozzáférés módja**: [MCP server / API kulcs / kézi / Claude Code natív]
-- **Utolsó frissítés**: YYYY-MM-DD
+- **Hozzáférés módja**: [MCP / API kulcs / Kézi / Natív]
+- **Utolsó frissítés**: ÉÉÉÉ-HH-NN
 ```
 
 ---

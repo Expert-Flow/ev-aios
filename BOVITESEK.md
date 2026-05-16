@@ -8,35 +8,35 @@ Itt felsorolom mit érdemes mérlegelni, MIKOR és MIÉRT.
 
 ## Domain skillek (.claude/skills/)
 
-Ezek konkrét SOP-k egy-egy ismétlődő munkafolyamatra. Csak akkor építsd meg, ha **3+ alkalommal csináltad már manuálisan**, és tudod hogy néz ki jól.
+Ezek konkrét eljárásrendek (SOP-k, vagyis szabványos munkafolyamatok) egy-egy ismétlődő munkafolyamatra. Csak akkor építsd meg, ha **3+ alkalommal csináltad már manuálisan**, és tudod hogy néz ki jól.
 
 ### Ügyfélszerzés
 - **`/ajanlat-keszites`** — egyedi árajánlat összeállítása brief alapján
-- **`/lead-valasz`** — első üzenet hideg vagy meleg leadnek
-- **`/utankoveto`** — elveszett lead visszahúzása
+- **`/lead-valasz`** — első üzenet hideg vagy meleg érdeklődőnek (lead = potenciális ügyfél)
+- **`/utankoveto`** — elveszett érdeklődő visszahúzása
 - **`/discovery-call-prep`** — felfedező hívás felkészülése
-- **`/landing-testreszabas`** — meglévő HTML+CSS sablon (lásd: `EV-Alap/sablonok/landing-oldal/`) placeholder tokenjeinek kitöltése a `context/icp.md` és `context/ajanlat.md` alapján. Token-takarékos: ~400-600 token kimenet a ~2000 helyett, mert nem scratch-ről generál oldalt, csak helyettesít.
+- **`/landing-testreszabas`** — A kész HTML-sablonba (lásd: `EV-Alap/sablonok/landing-oldal/`) beilleszti a saját szövegeidet a `context/icp.md` és `context/ajanlat.md` alapján. Kevesebb Claude-munka kell, mert nem nulláról ír oldalt, csak a helyettesítő szövegeket cseréli ki.
 
 ### Ügyfélkezelés
-- **`/onboarding`** — új ügyfél bevezetése (szerződés → hozzáférések → kickoff)
-- **`/heti-statusz`** — projekt státusz-email auto-draft
+- **`/onboarding`** — új ügyfél bevezetése: először szerződés, aztán hozzáférések, végül bevezető beszélgetés (kickoff hívás)
+- **`/heti-statusz`** — projekt státusz-email automatikus piszkozata
 - **`/projekt-zaras`** — projekt lezárás + ajánlás-kérés
-- **`/talalkozo-osszefoglalo`** — meeting transcript → action items + email
+- **`/talalkozo-osszefoglalo`** — találkozó-átiratból (transcript) elkészíti a következő lépések listáját és egy emailt
 
 ### Háttérműködés
-- **`/szamlazas`** — projektzárás után számla auto-generálás
+- **`/szamlazas`** — projektzárás után számla automatikus generálása
 - **`/fizetesi-emlekezteto`** — időzített, hangolt emlékeztetők
 - **`/heti-attekintes`** — operatív heti áttekintés generálása
 - **`/negyedeves-tervezes`** — Q-zárás és új Q-tervezés
 
-**Mikor építsd:** amikor a `/fejlesztes` skill javasolja, hogy egy konkrét workflow ismétlődik. Nem előtte.
+**Mikor építsd:** amikor a `/fejlesztes` skill javasolja, hogy egy konkrét munkafolyamat ismétlődik. Nem előtte.
 
 ---
 
 ## Új mappák
 
 ### `projektek/`
-Aktív ügyfél-projektek külön fájlokkal. Egy fájl = egy projekt. Ügyfél kontaktja, scope, határidők, státusz, feljegyzések.
+Aktív ügyfél-projektek külön fájlokkal. Egy fájl = egy projekt. Ügyfél kontaktja, a feladat határai (scope), határidők, státusz, feljegyzések.
 
 **Mikor:** amikor egynél több aktív ügyfeled van egyszerre.
 
@@ -46,7 +46,7 @@ Ismétlődő dokumentum-sablonok. Szerződés, NDA, ajánlat-sablon, onboarding-
 **Mikor:** amikor 2-3 alkalommal írtál ugyanolyan struktúrájú dokumentumot.
 
 ### `negyedeves/`
-Negyedéves áttekintések, OKR-ek, tervek. Egy fájl negyedévenként.
+Negyedéves áttekintések, mérhető célok, tervek. Egy fájl negyedévenként.
 
 **Mikor:** amikor 3+ hónapja használod aktívan az AIOS-t és van értelmes mennyiségű döntés a `decisions/naplo.md`-ben.
 
@@ -81,7 +81,7 @@ A te szakmai tudásbázisod — alapelvek, módszerek, csak nálad lévő insigh
 Ha ügyfeleidnek is építesz AIOS-t (pl. Solo Business ügyfeleknek), érdemes lehet:
 
 ### `ugyfel-aios/`
-Egy mappa minden ügyfélnek, aki saját AIOS-t kapott tőled. Itt tartod a deployolt verziót, az ő `ev-intake.md`-jüket, az ő testreszabásukat.
+Egy mappa minden ügyfélnek, aki saját AIOS-t kapott tőled. Itt tartod az élesbe rakott (deployolt) verziót, az ő `ev-intake.md`-jüket, az ő testreszabásukat.
 
 **Mikor:** amikor a 3. ügyfélnek szállítasz AIOS-alapú megoldást.
 
@@ -89,7 +89,7 @@ Egy mappa minden ügyfélnek, aki saját AIOS-t kapott tőled. Itt tartod a depl
 
 ## .claude/agents/
 
-Claude Code agentek — autonóm, célzott AI-asszisztensek egy-egy konkrét feladatra. Ez a Lego Principle legmagasabb szintje.
+Claude Code AI-segédek (agentek) — önállóan futó, célzott AI-asszisztensek egy-egy konkrét feladatra. Ez a Lego-elv legmagasabb szintje.
 
 **Mikor:** amikor 5+ skill van már, és kezded látni hogy egyes skillek "összetartoznak" egy nagyobb funkcióba.
 

@@ -1,7 +1,7 @@
 # /fejlesztes — Heti 3Ms Interjú (Pillér-fókusszal)
 
 ## Leírás
-Heti gondolkodási skill. Egy választott pilléren keresztül átfut a 3Ms-en (Mindset → Method → Machine), és a végén egy konkrét, megépíthető automatizálási darabot ad.
+Heti gondolkodási skill. Egy választott pilléren keresztül átfut a 3Ms-en (Gondolkodásmód, Módszer, Gép — ebben a sorrendben), és a végén egy konkrét, megépíthető automatizálási darabot ad.
 
 **Egy futás = egy automatizálás. Egy hét = egy futás.**
 
@@ -72,7 +72,7 @@ Ha a felhasználó megnevez egy feladatot, mielőtt továbbmész:
 > "Suggest (javasol, te döntesz), Execute with approval (megcsinálja, de jóváhagyást kér), vagy Autonomous (önállóan fut)? **Most kezdő szint javaslata: Suggest vagy Execute with approval.** Csak akkor menj autonomous-re, ha 10+ alkalommal hibátlanul futott a felügyelet alatt."
 
 **Tie to KPI**:
-> "Milyen mérhető mutató javul ettől? Konkrétan: ennyi → ennyi? (Pl. 'ajánlat-készítés 2 óra → 20 perc' vagy 'lead-válaszidő 24 óra → 1 óra'.) Ha nincs mérhető mutató, ne építsd meg."
+> "Milyen mérhető mutató javul ettől? Konkrétan: most mennyi, és mennyi a cél? (Pl. 'ajánlat-készítés 2 óráról 20 percre' vagy 'érdeklődő-válaszidő 24 óráról 1 órára'.) Ha nincs mérhető mutató, ne építsd meg."
 
 ### 4. fázis — Machine interjú
 
@@ -102,7 +102,7 @@ Generálj egy struktúrált tervet:
 **Constraint**: [egy mondat]
 **EAD szint**: [E / A / D]
 **Autonómia**: [Suggest / Execute with approval / Autonomous]
-**KPI**: [most → cél]
+**Mérhető mutató (KPI)**: [most: X, cél: Y]
 
 ### Modulok (Lego)
 1. [modul név] — [mit csinál] — [eszköz: ?]
@@ -130,7 +130,7 @@ Generálj egy struktúrált tervet:
 Append-old a `decisions/naplo.md` "Aktív bejegyzések" szekciójához:
 
 ```
-- **YYYY-MM-DD** | /fejlesztes futtatva | Pillér: [X] | Automatizálás: [név] | KPI: [most→cél]
+- **ÉÉÉÉ-HH-NN** | /fejlesztes futtatva | Pillér: [X] | Automatizálás: [név] | Mérhető mutató: [most: X, cél: Y]
 ```
 
 ### 7. fázis — Záró és számonkérés
