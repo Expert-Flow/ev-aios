@@ -15,6 +15,7 @@ Ezek konkrét SOP-k egy-egy ismétlődő munkafolyamatra. Csak akkor építsd me
 - **`/lead-valasz`** — első üzenet hideg vagy meleg leadnek
 - **`/utankoveto`** — elveszett lead visszahúzása
 - **`/discovery-call-prep`** — felfedező hívás felkészülése
+- **`/landing-testreszabas`** — meglévő HTML+CSS sablon (lásd: `EV-Alap/sablonok/landing-oldal/`) placeholder tokenjeinek kitöltése a `context/icp.md` és `context/ajanlat.md` alapján. Token-takarékos: ~400-600 token kimenet a ~2000 helyett, mert nem scratch-ről generál oldalt, csak helyettesít.
 
 ### Ügyfélkezelés
 - **`/onboarding`** — új ügyfél bevezetése (szerződés → hozzáférések → kickoff)
@@ -77,7 +78,7 @@ A te szakmai tudásbázisod — alapelvek, módszerek, csak nálad lévő insigh
 
 ## Sub-OS mappák (haladó)
 
-Ha ügyfeleidnek is építesz AIOS-t (pl. Expert Flow ügyfeleknek), érdemes lehet:
+Ha ügyfeleidnek is építesz AIOS-t (pl. Solo Business ügyfeleknek), érdemes lehet:
 
 ### `ugyfel-aios/`
 Egy mappa minden ügyfélnek, aki saját AIOS-t kapott tőled. Itt tartod a deployolt verziót, az ő `ev-intake.md`-jüket, az ő testreszabásukat.

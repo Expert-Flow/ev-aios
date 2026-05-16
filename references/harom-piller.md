@@ -1,6 +1,6 @@
 # A Három Pillér — Domain Térkép EV AI-munkához
 
-Az [Expert Flow](https://expertflow.hu) három pillére az a domain térkép, ahol az AI-munka történik egy egyéni vállalkozónál vagy szolgáltatónál. Minden héten egy pillérre fókuszálsz a `/fejlesztes` során — egy hét = egy pillér = egy automatizálási darab.
+A [Solo Business](https://solobusiness.hu) három pillére az a domain térkép, ahol az AI-munka történik egy egyéni vállalkozónál vagy szolgáltatónál. Minden héten egy pillérre fókuszálsz a `/fejlesztes` során — egy hét = egy pillér = egy automatizálási darab.
 
 A 3Ms (`3ms-keretrendszer.md`) a **hogyan** gondolkodj. Ez a fájl a **hol** alkalmazd.
 

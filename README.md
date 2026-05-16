@@ -1,10 +1,22 @@
 # EV-AIOS — AI Operációs Rendszer Egyéni Vállalkozóknak
 
-> *Hungarian solo entrepreneur AI Operating System starter kit for Claude Code. Inspired by [Nate Herk's AIS-OS](https://github.com/nateherkai/AIS-OS) and adapted for the Hungarian solo service provider market by [Expert Flow](https://expertflow.hu).*
+> *Hungarian solo entrepreneur AI Operating System starter kit for Claude Code. Inspired by [Nate Herk's AIS-OS](https://github.com/nateherkai/AIS-OS) and adapted for the Hungarian solo service provider market by [Solo Business](https://solobusiness.hu).*
 
 Egy ingyenes, MIT-licenszelt sablon, ami a Claude Code-ot a személyes **AI Operációs Rendszereddé (AIOS)** alakítja. **Célközönség**: magyar egyéni vállalkozók és szolgáltatók (jogászok, könyvelők, coachok, fotósok, terapeuták, fordítók, dizájnerek, szövegírók, virtuális asszisztensek).
 
 A sablon a `/bevezetes` interjú során személyre szabódik, majd két visszatérő gondolkodási skill (`/attekintes`, `/fejlesztes`) tartja építés alatt hétről hétre.
+
+---
+
+## Mielőtt klónozod — szükséged van-e először az EV-Alap-ra?
+
+Az EV-AIOS `/bevezetes` skill Q1-e ezt kérdezi: **"Ki vagy, mit adsz el, kinek?"**
+
+Ha **nem tudod 60 másodperc alatt válaszolni** erre — vagy ha válaszolsz, de te magad sem hiszed teljesen — akkor MIELŐTT klónozod ezt a repo-t, először csináld végig az **[EV-Alap](https://github.com/attilanagy23/EV-Alap)** brand discovery repo-t.
+
+Az EV-Alap egy 10 kérdéses interjú 4 fázisban (TE → ÜGYFÉL → HANG → AJÁNLAT), kb. 30-45 perc. A végén egy átemelhető fájl-csomagot ad, amit egy az egyben beolvasol ide. Az EV-AIOS akkor lesz **pontos és hangolt**, ha alatta már tiszta identitás és ICP áll.
+
+> **Litmusz teszt:** Ha az `ev-intake.md` Q1-et kitöltöd 30 másodperc alatt világosan és magabiztosan — kezdj itt. Ha homályosabb, mint szeretnéd — előbb [EV-Alap](https://github.com/attilanagy23/EV-Alap), aztán EV-AIOS.
 
 ---
 
@@ -82,7 +94,7 @@ EV-AIOS/
 ├── context/                         ← Rólad, a vállalkozásodról (a /bevezetes tölti)
 ├── references/
 │   ├── 3ms-keretrendszer.md         ← Operátori agy (Nate Herk 3Ms)
-│   ├── harom-piller.md              ← Domain térkép (Expert Flow 3 pillér)
+│   ├── harom-piller.md              ← Domain térkép (Solo Business 3 pillér)
 │   └── voice.md                     ← Verbatim hangminták (a /bevezetes tölti)
 ├── decisions/
 │   └── naplo.md                     ← Append-only döntésnapló
@@ -104,6 +116,6 @@ MIT Licenc.
 
 A The Three Ms of AI™ Nate Herk védjegye. © 2026 Nate Herk. A keret magyar fordításban, attribúcióval szerepel ebben a repo-ban — szabadon használható, de ne csomagold át sajátként.
 
-A három pillér (Ügyfélszerzés / Ügyfélkezelés / Háttérműködés) az [Expert Flow](https://expertflow.hu) saját kerete.
+A három pillér (Ügyfélszerzés / Ügyfélkezelés / Háttérműködés) a [Solo Business](https://solobusiness.hu) saját kerete.
 
 Eredeti angol AIS-OS: [github.com/nateherkai/AIS-OS](https://github.com/nateherkai/AIS-OS)

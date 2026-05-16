@@ -8,3 +8,5 @@ private/
 .idea/
 .vscode/
 .claude/cache/
+
+.claude/scheduled_tasks.lock
