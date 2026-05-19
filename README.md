@@ -102,6 +102,8 @@ A 3Ms a **HOGYAN**. A három pillér a **HOL**. Egy hét = egy pillér + egy 3Ms
 
 10. **3. héttől:** heti `/fejlesztes` rituálé. Egy automatizmus / hét.
 
+> **Elakadtál?** Nézd meg a [GYIK.md](GYIK.md)-t (gyakori kérdések, hibaelhárítás) és a [glosszárium](glosszarium.md)-ot (fogalmak magyarul).
+
 ---
 
 ## Repo struktúra
@@ -109,6 +111,8 @@ A 3Ms a **HOGYAN**. A három pillér a **HOL**. Egy hét = egy pillér + egy 3Ms
 ```
 EV-AIOS/
 ├── README.md
+├── GYIK.md                          ← Gyakori kérdések + hibaelhárítás (ha elakadsz)
+├── glosszarium.md                   ← Minden fogalom egy mondatban magyarázva
 ├── CLAUDE.md                        ← Az operátori manuálod (a /bevezetes tölti ki)
 ├── BOVITESEK.md                     ← Mit adj hozzá ahogy nősz
 ├── LICENSE
