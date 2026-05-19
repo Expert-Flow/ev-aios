@@ -15,8 +15,8 @@ Minden bejegyzés:
 
 ## Példa bejegyzések (törölheted)
 
-- **2026-05-02** | EV-AIOS rendszer indítása | Operations system kell, ami gyorsabbá tesz | Heti 1 automatizálási darab kiszállítva
-- **2026-05-09** | A `/fejlesztes` az ügyfélszerzésen indít | Q2 prioritás a bevétel | 1-2 új ügyfél a 3 pilléres workflow-ból
+- **2026-05-02** | EV-AIOS rendszer indítása | Működési rendszer kell, ami gyorsabbá tesz | Heti 1 automatizálási darab kiszállítva
+- **2026-05-09** | A `/fejlesztes` az ügyfélszerzésen indít | Q2 prioritás a bevétel | 1-2 új ügyfél a 3 pilléres munkafolyamatból
 
 ---
 

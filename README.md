@@ -79,12 +79,12 @@ A 3Ms a **HOGYAN**. A három pillér a **HOL**. Egy hét = egy pillér + egy 3Ms
 2. **Még előtte: ha nincs Claude Code-od**, telepítsd innen: [claude.com/claude-code](https://claude.com/claude-code).
 
 3. **Nyisd meg a Terminált.** (A Terminál egy szövegalapú felület, ahol parancsokkal beszélsz a géppel — kezdetben furcsa, de pár nap alatt megszokod.)
-   - Mac-en: nyomd a `Cmd + Space` gombot, írd be hogy `Terminal`, nyomj Entert.
-   - Windows-on: Start menü, írd be hogy `Parancssor` (vagy PowerShell), nyomj Entert.
+   - Mac-en: nyomd a `Cmd + Space` gombot, írd be: `Terminal`, nyomj Entert.
+   - Windows-on: Start menü, írd be: `Parancssor` (vagy PowerShell), nyomj Entert.
 
-4. **Lépj be a letöltött mappába.** Másold be:
+4. **Lépj be a letöltött mappába.** Másold be (a `~` a saját felhasználói mappádat jelenti, így bárhonnan működik):
    ```
-   cd Desktop/EV-AIOS
+   cd ~/Desktop/EV-AIOS
    ```
 
 5. **Indítsd a Claude Code-ot:**

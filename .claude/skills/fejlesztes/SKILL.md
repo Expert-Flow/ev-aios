@@ -62,7 +62,7 @@ Ha a felhasználó megnevez egy feladatot, mielőtt továbbmész:
 **EAD ellenőrzés** (ebben a sorrendben):
 
 1. > "**Eliminálható** ez a feladat egészében? Ha holnap nem csinálnád, mi történne? A világ végét jelenti vagy egy elkerülhető rituálé?"
-2. > "Ha nem eliminálható: **automatizálható-e** AI-jal vagy klasszikus workflow-val? Egyértelmű szabályok mentén megy?"
+2. > "Ha nem eliminálható: **automatizálható-e** AI-jal vagy klasszikus munkafolyamattal? Egyértelmű szabályok mentén megy?"
 3. > "Ha nem automatizálható: **delegálható-e**? Emberhez (pl. VA) vagy AI-asszisztenshez?"
 
 **Map Process**:

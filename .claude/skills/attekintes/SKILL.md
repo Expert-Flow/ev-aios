@@ -1,18 +1,18 @@
-# /attekintes — Heti Audit (Four Cs × Három Pillér)
+# /attekintes — Heti Audit (4 K × Három Pillér)
 
 ## Leírás
 Heti rendszer-felülvizsgálat. Két dimenzión értékeli az AIOS-t:
 
-1. **Four Cs** — architektúra rétegei (Context, Connections, Capabilities, Cadence)
+1. **4 K** — az architektúra rétegei (Kontextus, Kapcsolatok, Képességek, Ritmus)
 2. **Három pillér** — domain területek (ügyfélszerzés, ügyfélkezelés, háttérműködés)
 
 A kettő keresztezve egy 4×3-as mátrixot ad. Minden cellához egy státusz: ✅ kész / 🟡 részleges / 🔴 hiányzó.
 
-**Read-only skill** — csak elemez, nem változtat fájlokat (kivéve a végén egy bejegyzést a `decisions/naplo.md`-ben).
+**Read-only skill** — csak elemez, más fájlt nem módosít. Egyetlen kivétel: a végén egy bejegyzést fűz a `decisions/naplo.md`-hez.
 
 ## Mit csinál
 - Beolvassa a `context/`, `kapcsolatok.md`, `references/`, `decisions/naplo.md`, és a `.claude/skills/` mappa tartalmát
-- Értékeli minden Four Cs réteget mind a három pillér kontextusában
+- Értékeli mind a négy réteget (4 K) mind a három pillér kontextusában
 - Ad egy "AIOS érettség" pontszámot 0-12 között (12 cella, 1 pont per ✅, 0.5 per 🟡)
 - Javasol 1-3 konkrét hiányt a következő hétre
 - Bejegyzést tesz a `decisions/naplo.md`-be
@@ -37,34 +37,34 @@ Olvasd be:
 
 Töltsd ki a 4×3-as mátrixot:
 
-|                  | Ügyfélszerzés | Ügyfélkezelés | Háttérműködés |
-|------------------|---------------|---------------|---------------|
-| **Context**      | ✅/🟡/🔴      | ✅/🟡/🔴      | ✅/🟡/🔴      |
-| **Connections**  | ✅/🟡/🔴      | ✅/🟡/🔴      | ✅/🟡/🔴      |
-| **Capabilities** | ✅/🟡/🔴      | ✅/🟡/🔴      | ✅/🟡/🔴      |
-| **Cadence**      | ✅/🟡/🔴      | ✅/🟡/🔴      | ✅/🟡/🔴      |
+|                   | Ügyfélszerzés | Ügyfélkezelés | Háttérműködés |
+|-------------------|---------------|---------------|---------------|
+| **Kontextus**     | ✅/🟡/🔴      | ✅/🟡/🔴      | ✅/🟡/🔴      |
+| **Kapcsolatok**   | ✅/🟡/🔴      | ✅/🟡/🔴      | ✅/🟡/🔴      |
+| **Képességek**    | ✅/🟡/🔴      | ✅/🟡/🔴      | ✅/🟡/🔴      |
+| **Ritmus**        | ✅/🟡/🔴      | ✅/🟡/🔴      | ✅/🟡/🔴      |
 
 **Definíciók**:
 
-- **Context** — az AIOS tudja-e mit csinálsz ezen a pilléren?
+- **Kontextus** — az AIOS tudja-e mit csinálsz ezen a pilléren?
   - ✅ ha a `context/` fájlokban explicit infó van erről a pillérről
   - 🟡 ha általános, de pillér-specifikus részlet hiányzik
   - 🔴 ha nincs említve
 
-- **Connections** — bekötött eszköz van-e ezen a pilléren?
+- **Kapcsolatok** — bekötött eszköz van-e ezen a pilléren?
   - ✅ ha legalább 1 eszköz "Bekötve" státuszban a `kapcsolatok.md`-ben
   - 🟡 ha "Tervezett" vagy "Nincs bekötve" de ismert
   - 🔴 ha semmi nincs említve
 
-- **Capabilities** — van-e már skill ami ezen a pilléren működik?
+- **Képességek** — van-e már skill ami ezen a pilléren működik?
   - ✅ ha van legalább 1 domain skill ezen a pilléren
   - 🟡 ha az alap 3 (`/bevezetes`/`/attekintes`/`/fejlesztes`) érinti, de nincs domain skill
   - 🔴 soha — az alap 3 mindig érinti, ezért minimum 🟡
 
-- **Cadence** — fut-e magától valami rendszeresen ezen a pilléren?
-  - ✅ ha van automatizálás ami magától fut (cron, webhook, scheduled task)
+- **Ritmus** — fut-e magától valami rendszeresen ezen a pilléren?
+  - ✅ ha van automatizálás ami magától fut (időzítő, webhook, ütemezett feladat)
   - 🟡 ha van skill, de manuálisan kell hívni
-  - 🔴 ha nincs cadence
+  - 🔴 ha semmi sem fut magától
 
 ### 3. fázis — Pontszám és diagnózis
 - **Pontszám**: hány ✅ van? (1 pont) + hány 🟡 (0.5 pont) = `X / 12`
