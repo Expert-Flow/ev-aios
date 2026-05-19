@@ -8,7 +8,7 @@ Heti gondolkodási skill. Egy választott pilléren keresztül átfut a 3Ms-en (
 ## Mit csinál
 - Felteszi a választott pillér kérdést (1 a 3-ból)
 - Végigvezet a 3Ms-en abban a pillér-kontextusban
-- A végén kimenet: 1 db scope-olt automatizálási darab + automatikusan logolja `decisions/naplo.md`-be
+- A végén kimenet: 1 db jól körülhatárolt automatizálási darab + automatikusan naplózza `decisions/naplo.md`-be
 
 ## Mit NEM csinál
 - Nem épít több automatizálást egyszerre (szándékos limit: egy hét = egy darab)
@@ -71,7 +71,7 @@ Ha a felhasználó megnevez egy feladatot, mielőtt továbbmész:
 **Pick Autonomy Level**:
 > "Suggest (javasol, te döntesz), Execute with approval (megcsinálja, de jóváhagyást kér), vagy Autonomous (önállóan fut)? **Most kezdő szint javaslata: Suggest vagy Execute with approval.** Csak akkor menj autonomous-re, ha 10+ alkalommal hibátlanul futott a felügyelet alatt."
 
-**Tie to KPI**:
+**Mérhető célhoz kötés (Tie to KPI)**:
 > "Milyen mérhető mutató javul ettől? Konkrétan: most mennyi, és mennyi a cél? (Pl. 'ajánlat-készítés 2 óráról 20 percre' vagy 'érdeklődő-válaszidő 24 óráról 1 órára'.) Ha nincs mérhető mutató, ne építsd meg."
 
 ### 4. fázis — Machine interjú
@@ -115,7 +115,7 @@ Generálj egy struktúrált tervet:
 ### Kill switch
 - [hogyan állítjuk le] — [hol a kapcsoló]
 
-### Becsült build idő
+### Becsült fejlesztési idő
 [X óra]
 
 ### Következő lépés (most, ma)
@@ -127,7 +127,7 @@ Generálj egy struktúrált tervet:
 
 ### 6. fázis — Naplózás
 
-Append-old a `decisions/naplo.md` "Aktív bejegyzések" szekciójához:
+Fűzd hozzá a `decisions/naplo.md` "Aktív bejegyzések" szekciójához (a meglévő tartalom alá, sose írd át a régit):
 
 ```
 - **ÉÉÉÉ-HH-NN** | /fejlesztes futtatva | Pillér: [X] | Automatizálás: [név] | Mérhető mutató: [most: X, cél: Y]
@@ -143,4 +143,4 @@ Ez a számonkérés szándékos. A `/fejlesztes` lényege a kiszállítás, nem 
 
 ## Kimenet
 
-Egy darab scope-olt, építhető automatizálás. Egy hét munkája. Nem ötletbörze — implementációs terv.
+Egy darab jól körülhatárolt, építhető automatizálás. Egy hét munkája. Nem ötletbörze — megvalósítási terv.

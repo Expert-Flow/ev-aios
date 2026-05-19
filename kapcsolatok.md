@@ -1,6 +1,6 @@
 # Kapcsolatok
 
-Ez a fájl regiszterel minden eszközt és rendszert, amit az AIOS-od elér VAGY el kéne érnie. A `/bevezetes` tölti ki a Q4-Q7 alapján. A `/attekintes` ellenőrzi mi van bekötve és mi nincs.
+Ez a fájl nyilvántart minden eszközt és rendszert, amit az AIOS-od elér VAGY el kéne érnie. A `/bevezetes` tölti ki a Q4-Q7 alapján. A `/attekintes` ellenőrzi mi van bekötve és mi nincs.
 
 ---
 

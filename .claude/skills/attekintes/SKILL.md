@@ -90,10 +90,10 @@ Példa:
 
 ### 5. fázis — Naplózás
 
-Append-old a `decisions/naplo.md` "Aktív bejegyzések" szekciójához:
+Fűzd hozzá a `decisions/naplo.md` "Aktív bejegyzések" szekciójához (a meglévő tartalom alá, sose írd át a régit):
 
 ```
-- **YYYY-MM-DD** | /attekintes futtatva | Pontszám: X/12 | Top javaslat: [első javaslat egy mondatban]
+- **ÉÉÉÉ-HH-NN** | /attekintes futtatva | Pontszám: X/12 | Top javaslat: [első javaslat egy mondatban]
 ```
 
 ### 6. fázis — Záró

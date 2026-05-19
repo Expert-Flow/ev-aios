@@ -14,7 +14,7 @@ Az EV-AIOS `/bevezetes` skill Q1-e ezt kérdezi: **"Ki vagy, mit adsz el, kinek?
 
 Ha **nem tudod 60 másodperc alatt válaszolni** erre — vagy ha válaszolsz, de te magad sem hiszed teljesen — akkor MIELŐTT letöltöd ezt a repo-t, először csináld végig az **[EV-Alap](https://github.com/Expert-Flow/EV-Alap)** brand discovery repo-t.
 
-Az EV-Alap egy 10 kérdéses interjú 4 fázisban (TE, ÜGYFÉL, HANG, AJÁNLAT — ebben a sorrendben), kb. 30-45 perc. A végén egy átemelhető fájl-csomagot ad, amit egy az egyben beolvasol ide. Az EV-AIOS akkor lesz **pontos és hangolt**, ha alatta már tiszta identitás és ICP (ideális ügyfél-profil) áll.
+Az EV-Alap egy 10 kérdéses interjú 4 fázisban (TE, ÜGYFÉL, HANG, AJÁNLAT — ebben a sorrendben), kb. 60-90 perc. A végén egy átemelhető fájl-csomagot ad, amit egy az egyben beolvasol ide. Az EV-AIOS akkor lesz **pontos és hangolt**, ha alatta már tiszta identitás és ICP (ideális ügyfél-profil) áll.
 
 > **Önteszt:** Ha az `ev-intake.md` Q1-et kitöltöd 30 másodperc alatt világosan és magabiztosan — kezdj itt. Ha homályosabb, mint szeretnéd — előbb [EV-Alap](https://github.com/Expert-Flow/EV-Alap), aztán EV-AIOS.
 
@@ -92,7 +92,7 @@ A 3Ms a **HOGYAN**. A három pillér a **HOL**. Egy hét = egy pillér + egy 3Ms
    claude
    ```
 
-6. **Töltsd ki az `ev-intake.md`-t.** Vagy egyszerűbben: indítsd a `/bevezetes`-t, és a Claude végigkérdezi élőben (te csak válaszolsz). Kb. 30-45 perc, megszakítható-folytatható.
+6. **Töltsd ki az `ev-intake.md`-t.** Vagy egyszerűbben: indítsd a `/bevezetes`-t, és a Claude végigkérdezi élőben (te csak válaszolsz). Kb. 60-90 perc, megszakítható-folytatható.
 
 7. **Használd egy hetet.** Hozz valós kérdéseket, döntéseket. A döntéseket az AI a `decisions/naplo.md`-be naplózza.
 
@@ -114,7 +114,7 @@ EV-AIOS/
 ├── LICENSE
 ├── .gitignore
 ├── ev-intake.md                     ← A /bevezetes forrás-fájlja. Bármikor szerkeszd, újrafuttasd.
-├── kapcsolatok.md                   ← Minden rendszer regisztere, amit az AIOS elér
+├── kapcsolatok.md                   ← Minden rendszer nyilvántartása, amit az AIOS elér
 ├── context/                         ← Rólad, a vállalkozásodról (a /bevezetes tölti)
 ├── references/
 │   ├── 3ms-keretrendszer.md         ← Operátori agy (Nate Herk 3Ms)
